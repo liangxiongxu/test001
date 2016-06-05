@@ -7,7 +7,8 @@ function fun1 (){
 var os;
 	
 	
-var str1 = "hello world";
+var str1 = "hello world , I am coming";
+
 
 var str2 = '{"id":2,"label":"C"}';
 
