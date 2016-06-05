@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>tab1</title>
+<link rel="stylesheet" type="text/css" href="tab.css">
+
+<script type="text/javascript">
+	function tabFun(tab) {
+		//alert("come here");
+		if (tab == 'tab1') {
+			document.getElementById('tab1').style.display = 'block';
+			document.getElementById('tab2').style.display = 'none';
+			//document.getElementById('li_tab1').setAttribute("class", "");
+			//document.getElementById('li_tab2').setAttribute("class", "");
+			//document.getElementById(tab).style.display = 'block';
+			//document.getElementById('li_' + tab).setAttribute("class", "active");
+			document.getElementById('tab1').setAttribute("class", "active");
+			document.getElementById('tab2').setAttribute("class", "");
+
+		} else {
+			document.getElementById('tab2').style.display = 'block';
+			document.getElementById('tab1').style.display = 'none';
+			//document.getElementById('li_tab1').setAttribute("class", "");
+			//document.getElementById('li_tab2').setAttribute("class", "");
+			//document.getElementById(tab).style.display = 'block';
+			//document.getElementById('li_' + tab).setAttribute("class", "active");
+			document.getElementById('tab2').setAttribute("class", "active");
+			document.getElementById('tab1').setAttribute("class", "");
+		}
+
+	}
+</script>
+
+</head>
+<body>
+	<div id="Tabs">
+
+		<ul>
+			<li id="li_tab1" onclick="tabFun('tab1')" ><a>Tab 1</a>
+			</li>
+			<li id="li_tab2" onclick="tabFun('tab2')"><a>Tab 2</a>
+			</li>
+			<li id="li_tab3" onclick="tabFun('xxx')">
+			</li>
+		</ul>
+
+		<div id="Content_Area">
+
+			<div id="tab1">
+				<p>This is the text for tab 1</p>
+			</div>
+
+			<div id="tab2" style="display: none;">
+				<p>This is the text for tab 2.</p>
+			</div>
+
+		</div>
+
+	</div>
+	
+	
+	
+	
+</body>
+</html>
