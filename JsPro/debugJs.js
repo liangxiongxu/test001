@@ -20,5 +20,6 @@ os = str2.replace(/"label":"[^]*"/ig, '"label":"' + str1 + '"');
 document.getElementById("demo").innerHTML=os;
 
 var name = "Cailiang Xu";
+var age = 30;
 
 }
