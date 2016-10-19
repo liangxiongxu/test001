@@ -21,6 +21,10 @@ document.getElementById("demo").innerHTML=os;
 
 var name = "Cailiang Xu";
 var age = 30;
+
 var sex = "master male";
+
+var sex2 = "male";
+
 
 }
