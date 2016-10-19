@@ -24,7 +24,5 @@ var age = 30;
 
 var sex = "master male";
 
-var sex2 = "male";
-
 
 }
