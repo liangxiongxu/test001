@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>carousel</title>
+    <link rel="stylesheet" type="text/css" href="styles/carousel.css">
+</head>
+<body>
+    <div>
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide center" style="background-color: aquamarine;">slide 1</div>
+                <div class="slide" style="background-color: aqua;">slide2</div>
+                <div class="slide" style="background-color:blanchedalmond;">slide3</div>
+            </div>
+            <div class="controls">
+                <div class="control-left">&lt;</div>
+                <div class="control-right">&lt;</div>
+                <div class="control-pagination">
+                    <div class="control-dot">&bullet;</div>
+                    <div class="control-dot">&bullet;</div>
+                    <div class="control-dot">&bullet;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" >
+    new carousel({
+        element:$("carousel").eq(0),
+        timing:6000
+    });
+</script>
+</body>
+</html>
